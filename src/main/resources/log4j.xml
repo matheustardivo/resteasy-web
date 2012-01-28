@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+    <!-- App Logging -->
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="encoding" value="UTF-8" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %5p [%t] [%C{2}] %m%n" />
+        </layout>
+    </appender>
+
+    <appender name="file" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="log/provisionador.log" />
+        <param name="DatePattern" value="'.'yyyy-MM-dd" />
+        <param name="Append" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss,SSS} %5p [%t] [%C{2}] %m%n" />
+        </layout>
+    </appender>
+
+    <!-- Log level filtering -->
+
+    <logger name="br.com.ig">
+        <level value="DEBUG" />
+    </logger>
+    <logger name="br.com.ig.provisionador">
+        <level value="DEBUG" />
+    </logger>
+    
+
+    <!--  Root logger -->
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="CONSOLE" />
+    </root>
+</log4j:configuration>
