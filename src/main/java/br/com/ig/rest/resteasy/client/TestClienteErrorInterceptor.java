@@ -22,6 +22,7 @@ public class TestClienteErrorInterceptor implements ClientErrorInterceptor {
 
 			errorMessage = response.getEntity(String.class);
 		} catch (Exception ex) {
+			ex.printStackTrace();
 			LOGGER.error(ex);
 		}
 

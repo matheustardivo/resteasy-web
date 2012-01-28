@@ -7,12 +7,12 @@
 
     <context-param>
         <param-name>resteasy.resources</param-name>
-        <param-value>br.com.ig.rest.web.TestResourceImpl</param-value>
+        <param-value>br.com.ig.rest.resteasy.web.TestResourceImpl</param-value>
     </context-param>
 
     <context-param>
         <param-name>resteasy.providers</param-name>
-        <param-value>br.com.ig.rest.web.ThrowableExceptionMapper</param-value>
+        <param-value>br.com.ig.rest.resteasy.web.ThrowableExceptionMapper</param-value>
     </context-param>
 
     <context-param>

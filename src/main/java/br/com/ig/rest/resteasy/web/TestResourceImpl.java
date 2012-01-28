@@ -1,4 +1,4 @@
-package br.com.ig.rest.web;
+package br.com.ig.rest.resteasy.web;
 
 public class TestResourceImpl implements TestResource {
 

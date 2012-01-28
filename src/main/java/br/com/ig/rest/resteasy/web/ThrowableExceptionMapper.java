@@ -1,4 +1,4 @@
-package br.com.ig.rest.web;
+package br.com.ig.rest.resteasy.web;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.Response.Status;

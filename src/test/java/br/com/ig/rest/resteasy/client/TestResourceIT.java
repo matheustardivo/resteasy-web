@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import br.com.ig.rest.web.TestResource;
+import br.com.ig.rest.resteasy.web.TestResource;
 
 public class TestResourceIT {
 

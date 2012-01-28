@@ -11,7 +11,7 @@ import org.jboss.resteasy.client.ProxyFactory;
 import org.jboss.resteasy.client.core.executors.ApacheHttpClient4Executor;
 import org.jboss.resteasy.spi.ResteasyProviderFactory;
 
-import br.com.ig.rest.web.TestResource;
+import br.com.ig.rest.resteasy.web.TestResource;
 
 public class TestResourceBuilder {
 
