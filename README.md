@@ -18,22 +18,29 @@ The `br.com.ig.rest.resteasy.client.TestClienteErrorInterceptor` class will thro
 
 The exception is `java.io.IOException: Stream closed`.
 
-`java.io.IOException: Stream closed
-	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
-	at java.io.BufferedInputStream.reset(BufferedInputStream.java:414)
-	at br.com.ig.rest.resteasy.client.TestClienteErrorInterceptor.handle(TestClienteErrorInterceptor.java:21)
-	at org.jboss.resteasy.client.core.extractors.ClientErrorHandler.clientErrorHandling(ClientErrorHandler.java:49)
-	at org.jboss.resteasy.client.core.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:40)
-	at org.jboss.resteasy.client.core.ClientInvoker.invoke(ClientInvoker.java:120)
-	at org.jboss.resteasy.client.core.ClientProxy.invoke(ClientProxy.java:88)
-	at $Proxy19.getError(Unknown Source)
-	at br.com.ig.rest.resteasy.client.TestResourceIT.getError(TestResourceIT.java:28)`
+> java.io.IOException: Stream closed
+>
+> 	at java.io.BufferedInputStream.getBufIfOpen(BufferedInputStream.java:145)
+>
+> 	at java.io.BufferedInputStream.reset(BufferedInputStream.java:414)
+>
+> 	at br.com.ig.rest.resteasy.client.TestClienteErrorInterceptor.handle(TestClienteErrorInterceptor.java:21)
+>
+> 	at org.jboss.resteasy.client.core.extractors.ClientErrorHandler.clientErrorHandling(ClientErrorHandler.java:49)
+>
+> 	at org.jboss.resteasy.client.core.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:40)
+>
+> 	at org.jboss.resteasy.client.core.ClientInvoker.invoke(ClientInvoker.java:120)
+>
+> 	at org.jboss.resteasy.client.core.ClientProxy.invoke(ClientProxy.java:88)
+>
+> 	at $Proxy19.getError(Unknown Source)
+>
+> 	at br.com.ig.rest.resteasy.client.TestResourceIT.getError(TestResourceIT.java:28)
 
 Just changing the `resteasy.version` property to **2.0.1.GA** then all tests pass.
 
 ## Environment
-`java version "1.6.0_29"
-Java(TM) SE Runtime Environment (build 1.6.0_29-b11-402-11M3527)
-Java HotSpot(TM) 64-Bit Server VM (build 20.4-b02-402, mixed mode)` 
+`java version "1.6.0_29"` 
 
 `Apache Maven 2.2.1 (r801777; 2009-08-06 16:16:01-0300)`
